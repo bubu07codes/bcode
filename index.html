@@ -3,101 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BCode - Home</title>
-<style>
-  body {
-    background-color: #1e1b29;
-    color: #e0e0e0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  header {
-    background-color: #3e2c52;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 4px solid #7e57c2;
-  }
-
-  header h1 {
-    color: #e0e0e0;
-    font-size: 2.5em;
-  }
-
-  nav {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  nav a {
-    color: #b39ddb;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-
-  nav a:hover {
-    color: #7e57c2;
-  }
-
-  .container {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .section {
-    margin-bottom: 40px;
-    background-color: #2c2541;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-
-  .section h2 {
-    color: #b39ddb;
-    margin-bottom: 10px;
-  }
-
-  footer {
-    background-color: #3e2c52;
-    padding: 10px;
-    text-align: center;
-    color: #e0e0e0;
-    border-top: 4px solid #7e57c2;
-  }
-</style>
+<title>BubuCode Documentation</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <h1>BCode (BubuCode)</h1>
+  <header>
+    <h1>BubuCode <span>Documentation</span></h1>
+  </header>
+  
   <nav>
-    <a href="index.html">Home</a>
-    <a href="documentation.html">Documentation</a>
-    <a href="#">GitHub</a>
-  </nav>
-</header>
-
-<div class="container">
-  <div class="section">
-    <h2>Welcome to BCode</h2>
-    <p>BCode is an easy-to-learn, simple, and powerful programming language designed for both beginners and experienced programmers looking for a fun and intuitive language.</p>
-  </div>
-
-  <div class="section">
-    <h2>Features</h2>
     <ul>
-      <li>Beginner-Friendly Syntax</li>
-      <li>Fast Learning</li>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#syntax">Syntax</a></li>
+      <li><a href="#variables">Variables</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#conditionals">Conditionals</a></li>
+      <li><a href="#loops">Loops</a></li>
     </ul>
-  </div>
-</div>
+  </nav>
 
-<footer>
-  <p>© 2024 BubuTheDev - MIT Licensed</p>
-</footer>
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>BubuCode is an easy-to-learn programming language designed for simple and memorable syntax.</p>
+    </section>
+
+    <section id="syntax">
+      <h2>Basic Syntax</h2>
+      <p>Here is a sample syntax for BubuCode:</p>
+      <div class="code-block">
+        <code>** this is a comment<br>
+        var number: 10<br>
+        log("Hello, BubuCode!")</code>
+      </div>
+    </section>
+
+    <section id="variables">
+      <h2>Variables</h2>
+      <p>In BubuCode, you can declare variables using <code>var</code> keyword:</p>
+      <div class="code-block">
+        <code>var name: "Bubu"<br>
+        var age: 20</code>
+      </div>
+    </section>
+
+    <section id="functions">
+      <h2>Functions</h2>
+      <p>You can define functions using the <code>function</code> keyword:</p>
+      <div class="code-block">
+        <code>function greet(name)<br>
+          &nbsp;&nbsp;log("Hello, " + name)<br>
+        end</code>
+      </div>
+    </section>
+
+    <section id="conditionals">
+      <h2>Conditionals</h2>
+      <p>Conditionals in BubuCode use <code>if</code> and <code>else</code>:</p>
+      <div class="code-block">
+        <code>if age >= 18 then<br>
+          &nbsp;&nbsp;log("You are an adult.")<br>
+        else<br>
+          &nbsp;&nbsp;log("You are a minor.")<br>
+        end</code>
+      </div>
+    </section>
+
+    <section id="loops">
+      <h2>Loops</h2>
+      <p>BubuCode supports <code>forloop</code> and <code>whileloop</code>:</p>
+      <div class="code-block">
+        <code>forloop i = 0, 5 do<br>
+          &nbsp;&nbsp;log(i)<br>
+        end</code>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 BubuTheDev. All rights reserved.</p>
+  </footer>
 </body>
 </html>
