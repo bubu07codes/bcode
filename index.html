@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCode</title>
+<style>
+    body {
+        background-color: #1e1e1e;
+        color: #c7c7c7;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    h1, h2 {
+        color: #ffffff;
+    }
+    h2 {
+        margin-top: 50px;
+        border-bottom: 2px solid #444;
+        padding-bottom: 5px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    code {
+        background-color: #2d2d2d;
+        color: #cf38e6;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: large;
+    }
+    pre {
+        background-color: #2d2d2d;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-family: "Courier New", Courier, monospace;
+        color: #c034d6;
+        font-size: large;
+    }
+    </style>
+</head>
+<body>
+    <h1>BCode Full Documentation</h1>
+    <h1>Documentacion</h1>
+
+    <h2>Variables</h2>
+    <p>Declare variables using the <code>VAR</code> keyword.</p>
+    <pre>
+VAR name = "Bubu"
+VAR number = 42
+    </pre>
+
+    <h2>Functions</h2>
+    <p>Define functions with <code>FUN</code>. Use <code>RETURN</code> to exit with a value.</p>
+    <pre>
+FUN add(a, b)
+    RETURN a + b
+END
+
+FUN greet(name)
+    PRINT("Hello, " + name)
+END
+    </pre>
+
+    <h2>If Statements</h2>
+    <p>Use <code>IF</code>, <code>THEN</code>, and <code>ELSE</code> for conditionals.</p>
+    <pre>
+IF condition THEN
+    PRINT("Condition is true")
+END
+
+IF condition <= 10 THEN
+    PRINT("Less or equal to 10")
+ELIF condition == 74
+    PRINT("Equal to 74")
+ELSE
+    PRINT("Other value")
+END
+    </pre>
+
+    <h2>Printing</h2>
+    <p>Use the <code>PRINT()</code> function to display text in the output.</p>
+    <pre>
+PRINT("Hello, BCode!")
+    </pre>
+
+    <h2>For Loops</h2>
+    <p>Create loops with <code>FOR</code> and <code>TO</code>.</p>
+    <pre>
+FOR i = 1 TO 10 THEN
+    PRINT(i)
+END
+    </pre>
+
+    <h2>Comments</h2>
+    <p>Add comments using the <code>#</code> symbol. They are ignored during execution.</p>
+    <pre>
+# This is a comment in BCode
+# I <3 BCODE
+    </pre>
+
+    <h2>Joining Function</h2>
+    <p>Example of a single-line function with the joining feature.</p>
+    <pre>
+FUN oopify(prefix) -> prefix + "oop"
+    </pre>
+
+    <h2>Overview Example</h2>
+    <p>Here's a more complex example using various features of BCode:</p>
+    <pre>
+# This is a very cool example
+
+FUN oopify(prefix) -> prefix + "oop"
+
+FUN join(elements, separator)
+    VAR result = ""
+    VAR len = LEN(elements)
+
+    FOR i = 0 TO len THEN
+        VAR result = result + elements/i
+        IF i != len - 1 THEN 
+            VAR result = result + separator
+        END
+    END
+
+    RETURN result
+END
+
+FUN map(elements, func)
+    VAR new_elements = []
+
+    FOR i = 0 TO LEN(elements) THEN
+        APPEND(new_elements, func(elements/i))
+    END
+
+    RETURN new_elements
+END
+
+PRINT("Greetings universe!")
+
+FOR i = 0 TO 5 THEN
+    PRINT(join(map(["l", "sp"], oopify), ", "))
+END
+    </pre>
+
+</body>
+</html>
