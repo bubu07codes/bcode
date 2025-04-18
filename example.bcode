@@ -1,0 +1,8 @@
+
+VAR random = RANDOM(1,2)
+
+IF random == 2 THEN
+    PRINT("You won!")
+ELSE
+    PRINT("You DIED!")
+END
