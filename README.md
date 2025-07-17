@@ -1,6 +1,9 @@
-# So I made a programming language :D
-## Called **BCode**, don’t get it mixed up with BBCode
+# Bcode
 
-It's made in Python, even tho I hate Python :D jk
+A small and simple programming language.
 
-Read the **documentation** of BCode here: https://bubu07codes.github.io/bcode/
+This language was created for a small project, and should NOT be used for any work. (Just a recommendation.)
+
+# Documentation
+
+https://bubu07codes.github.io/bcode/
